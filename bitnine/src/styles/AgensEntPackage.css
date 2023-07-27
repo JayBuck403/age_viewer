@@ -1,0 +1,45 @@
+.enterprise-package-section {
+    text-align: center;
+    position: relative;
+    top: 500px;
+    height: 50rem;
+}
+
+.enterprise-package-section .ent-image-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.enterprise-package-section .package-titles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.aem {
+   margin-right: 70px;
+}
+
+.enterprise-package-section .ent-image {
+    width: 40rem;
+    height: 36rem;
+    background: url('https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-1024x922.png') no-repeat;
+    background-size: cover; 
+}
+
+.enterprise-package-section .aem-boxes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 80px;
+}
+
+.enterprise-package-section .aem-boxes {
+    width: 30rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 3px solid #022EA9;
+    border-radius: 10px;
+}

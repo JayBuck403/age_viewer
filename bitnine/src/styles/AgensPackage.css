@@ -1,0 +1,51 @@
+.agens-package {
+    width: 60%;
+    height: 300px;
+    border: 3px solid #022EA9;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.agens-package .enterprise-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.package-title {
+    text-align: center;
+}
+
+.agens-package .usability, .scalability, .stability {
+    width: 15rem;
+    height: 12rem;
+    border: 3px solid #FBC430;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.agens-package .stability-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+    border: 3px solid #022EA9;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.agens-package .installation {
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+}
+
+/* .usability-funtion {
+    display: inline;
+    position: relative;
+    top: 180px;
+    right: 200px;
+    background-color: aqua;
+} */

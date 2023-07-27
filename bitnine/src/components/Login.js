@@ -1,23 +1,30 @@
-// import { useState } from "react";
+import { useState } from "react";
+import "../styles/SignUp.css";
 
-// const Login = () => {
+const Login = () => {
 
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-//     return (
-//         <div>
-//             <form action="/sign_up" method="POST" onSubmit={handleSubmit}>
-//                 <div>
-//                     <label htmlFor="email">Email</label>
-//                     <input type="text" onChange={(e) => setEmail(e.target.value)} value={email}/>
-//                 </div>
-//                 <div>
-//                     <label htmlFor="password">Password</label>
-//                     <input type="password" onChange={(e) => setPassword(e.target.value)} value={password}/>
-//                 </div>
-//                 <button type="submit">Sign Up</button>
-//             </form>
-//         </div>  
-//     )
-// }
+    const handleSubmit = async () => {
 
-// export default Login;
+    }
+
+    return (
+        <div className="form-container">
+            <div className="form-image"></div>
+            <h2>Login</h2>
+            <form action="/login" method="POST" onSubmit={handleSubmit}>
+                <div>
+                    <input className="email-box" type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)} value={email}/>
+                </div>
+                <div>
+                    <input className="password-box" type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} value={password}/>
+                </div>
+                <button type="submit">Log in</button>
+            </form>
+        </div>  
+    )
+}
+
+export default Login;

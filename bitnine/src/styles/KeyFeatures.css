@@ -1,0 +1,46 @@
+.key-features {
+    position: relative;
+    top: 350px;
+}
+
+.key-features h1, .key-features p,  .key-features h2{
+    text-align: center;
+}
+
+.key-features-chart {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 30rem;
+    border: 3px solid #022EA9;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.key-features-func {
+    border: 3px solid #FBC430;
+    width: 400px;
+    height: 130px;
+    margin-top: 80px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+
+.key-features-func h2 span {
+    margin: auto 10px;
+}
+
+.agens-sql-circle {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid #022EA9;
+    border-radius: 100%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2rem;
+}

@@ -1,0 +1,36 @@
+.db-engine {
+    text-align: center;
+    position: relative;
+    top: 400px;
+}
+
+.db-engine .box-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.db-engine .db-engine-box {
+    display: flex;
+    justify-content: center;
+    width: 17rem;
+    height: 12rem;
+    border: 3px solid #022EA9;
+    border-radius: 10px;
+}
+
+.db-engine .db-engine-box .child-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 50%;
+    border: 3px solid #FBC430;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.db-engine .db-engine-box .hover-text {
+    display: none;
+}

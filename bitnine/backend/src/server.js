@@ -1,7 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors());
 
 // database connection
 mongoose.connect('mongodb://localhost/Users')
@@ -22,15 +25,15 @@ app.use(express.json());
 
 // routes
 app.get('/', async (req, res) => {
-    res.send('Welcome');
+    res.json({"message": "hi there from the server"});
 });
 
 app.get('/sign_up', async (req, res) => {
-    res.send('sign up page');
+    res.json('sign up page');
 });
 
 app.get('/login', async (req, res) => {
-    res.send('login page');
+    res.json('login page');
 });
 
 app.post('/sign_up', async (req, res) => {
@@ -41,10 +44,10 @@ app.post('/sign_up', async (req, res) => {
     });
 
         newUser = await newUser.save()
-        res.send(newUser);
+        res.json(newUser);
 
     } catch (error) {
-        res.send(error.message);
+        res.status(400).json({error: error.message});
     }
 });
 

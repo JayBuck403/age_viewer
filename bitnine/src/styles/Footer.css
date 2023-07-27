@@ -1,0 +1,33 @@
+.footer {
+    position: relative;
+    top: 40rem;
+    text-align: center;
+    border-top: 1px solid #FBC430;
+}
+
+.footer .footer-box-1 {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.footer-boxes {
+    text-align: left;
+}
+
+.copyright-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyright-box h4 {
+    margin-left: -60px;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}    

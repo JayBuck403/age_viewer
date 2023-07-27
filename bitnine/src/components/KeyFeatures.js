@@ -9,7 +9,7 @@ import { TbLoadBalancer } from 'react-icons/tb';
 const KeyFeatures = () => {
     return ( 
         <div className="key-features">
-            <h2 className="key-features-title">Key Features</h2>
+            <h1 className="key-features-title">Key Features</h1>
             <p>Manage your data with Agens Enterprise Package<br/>
                 Essential enterprise features such as high availability and sharding are provided
             </p>
@@ -29,6 +29,7 @@ const KeyFeatures = () => {
                         </p>
                     </div>
                 </div>
+                <div className="agens-sql-circle">AgensSQL</div>
                 <div className="key-features-row-2">
                     <div className="key-features-func">
                     <h2><span className="icon"><AiOutlineMonitor/></span>Monitoring</h2>
