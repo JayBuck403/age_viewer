@@ -1,11 +1,18 @@
 import { useState } from "react";
+import Login from "./Login";
 import "../styles/SignUp.css";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+
+    const navigate = useNavigate();
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
+
+
+    let isRegistered = false;
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -18,7 +25,6 @@ const SignUp = () => {
 	    headers: {"Content-Type": "application/json"}
 	});
 
-	const json = response.json();
 
 	if (!response.ok) {
 	    setError(error);
@@ -28,11 +34,11 @@ const SignUp = () => {
 	    setEmail("");
 	    setPassword("");
 	    setError(null);
-	    console.log("New user added", json);
+	    navigate("/login");
 	}
     }
 
-    return ( 
+    return isRegistered ? <Login /> : ( 
         <div className="form-container">
             <div className="form-image"></div>
             <h2>Sign Up</h2>

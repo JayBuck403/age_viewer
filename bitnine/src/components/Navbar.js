@@ -1,14 +1,18 @@
 import '../styles/Navbar.css';
 import HomeButtons from "./HomeButtons";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+
+	const location = useLocation();
+
     return ( 
         <div className="nav-container">
             <div className="logo"></div>
             <div className="nav-links">
                 <div className="top-nav">
-                    <Link to="/sign_up"><HomeButtons name="Sign up" /></Link>
+	    	    <p>You are logged in as {location.state.id}</p>
+                    <Link to="/"><HomeButtons name="Sign up" /></Link>
                     <Link to="/login"><HomeButtons name="Login" /></Link>
                 </div>
                 <ul>

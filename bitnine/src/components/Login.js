@@ -1,13 +1,29 @@
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "../styles/SignUp.css";
+import axios from "axios";
 
 const Login = () => {
+
+    const navigate = useNavigate()
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleSubmit = async () => {
+    const handleSubmit = async (e) => {
+	e.preventDefault();
 
+
+        await axios.post("http://localhost:8080/login", {
+            email, password
+        })
+	.then(response => {
+         	    if (response.data === "Homepage") {
+			navigate("/home", {state: {id: email}});
+		 } else {
+			alert("User not registered");
+		 }
+	    });
     }
 
     return (
