@@ -1,4 +1,4 @@
-Question No.6 - Basic Algos
+### **Question No.6 - Basic Algos**
 
 ### **question_6-1.py:**
 isPalindrome function (python) checks if a word (user input) is a palindrome or not. If word is a palindrome it prints *'word is palindrome'* to the console.
@@ -17,3 +17,11 @@ myDigitalClock is a JavaScript based digital clock. It prints the current time t
 
 ### **Usage:**
 Run ./question_6-3.js in a Node.js environment.
+
+### **Question 5-1** 
+Need to implement a login/signup page that will allow users to view some content after signing up and then login
+Check Readme in bitnine/
+
+### **Question 5-2**
+Design a webpage similar to the Bitnine's official website https://bitnine.net/
+Check Readme in bitnine/
