@@ -14,16 +14,20 @@
 .top-nav {
     position: relative;
     bottom: 3rem;
-    left: 73.5rem;
+    left: 50.5rem;
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
+.top-nav p {
+    margin-right: 80px;
+}
+
 .nav-links ul {
     position: relative;
     left: 700px;
-    bottom: 50px;
+    bottom: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
